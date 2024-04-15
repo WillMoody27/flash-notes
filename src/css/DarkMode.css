@@ -1,0 +1,27 @@
+/* Styles for Dark Mode + Light Mode */
+.dark-mode,
+.light-mode {
+  padding: 8px;
+  transform: translate(0) scale(1);
+  transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease,
+    position 0.3s ease;
+  color: #ffff;
+}
+
+.dark-mode.hidden,
+.light-mode.hidden {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  transform: translate(-100px) scale(0);
+  /* display: none; */
+}
+
+.drk-mode-toggle:hover {
+  opacity: 1;
+}
+
+.dark-mode:active,
+.light-mode:active {
+  transform: scale(0.9);
+}

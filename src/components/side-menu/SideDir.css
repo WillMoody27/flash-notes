@@ -1,0 +1,57 @@
+:root {
+  --gradient-color--primary: rgb(0, 179, 255);
+  --gradient-color--secondary: yellow;
+}
+
+@keyframes colorChng {
+  0% {
+    background: var(--gradient-color--primary);
+  }
+  50% {
+    background: var(--gradient-color--secondary);
+  }
+  100% {
+    background: var(--gradient-color--primary);
+  }
+}
+
+.left--content__wrapper {
+  background: #a7a7a7;
+  border-right: 0px solid transparent;
+  width: 10px;
+  flex: 0.02;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  animation: colorChng 3s linear infinite;
+  position: fixed;
+  height: 100vh;
+}
+.left--content__wrapper--active {
+  color: #333;
+  border-right: 1px solid #e2e2e2;
+  width: 100px;
+  flex: 0.1;
+  background: #bbbbbb !important;
+  animation-play-state: paused;
+}
+.arrow--wrapper {
+  width: 100%;
+  position: relative;
+}
+.back--arrow {
+  padding-top: 1.5rem;
+  color: #000;
+  width: 100px;
+  margin-left: 70%;
+  transform: translateX(500px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+}
+.left--content__wrapper--active .back--arrow {
+  width: 100px;
+  margin-left: 65%;
+  font-size: 1.2rem;
+  opacity: 1;
+  visibility: visible;
+}

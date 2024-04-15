@@ -1,0 +1,70 @@
+/* Animations (Keyframes) */
+@keyframes bolt {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.heading--content {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+span.heading--main__bolt {
+  display: inline-block;
+  transform: rotate(130deg);
+  font-size: 2rem;
+  animation: bolt 3s linear infinite;
+  position: relative;
+  transition: all 3s ease-in-out;
+  filter: grayscale(100%);
+}
+
+.logo--fn {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+  font-weight: 900;
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+  color: inherit;
+}
+
+.heading--main {
+  border: none;
+  font-size: 2.8rem;
+  font-weight: 900;
+  background: none;
+  color: inherit;
+}
+
+.heading--main:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 900px) {
+  .heading--main {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .heading--content {
+    flex-direction: column-reverse;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  span.heading--main__bolt {
+    font-size: 3rem;
+  }
+  .logo--fn {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+}

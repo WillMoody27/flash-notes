@@ -1,4 +1,8 @@
 /* Styles for Dark Mode + Light Mode */
+.drk-mode-toggle {
+  overflow: hidden;
+}
+
 .dark-mode,
 .light-mode {
   padding: 8px;

@@ -25,11 +25,18 @@ Welcome to **Flash Notes**! This application is designed to assist students in o
 style="display: flex; justify-content: center; align-items: center; 
 flex-wrap: wrap;
 gap: 20px;
+width: 70%;
 margin-top: 20px;">
-<img src="
+<!-- <img src="
 ../flash-notes/assests/image.png" width="450" height="auto">
 <img src="
-../flash-notes/assests/image2.png" width="450" height="auto">
+../flash-notes/assests/image2.png" width="450" height="auto"> -->
+
+<!-- img -->
+
+![Desktop View](../flash-notes/assests/image.png)
+![Desktop View](../flash-notes/assests/image2.png)
+
 </div>
 
 <!-- Set smaller size image -->
@@ -40,11 +47,16 @@ margin-top: 20px;">
 style="display: flex; justify-content: center; align-items: center; 
 flex-wrap: wrap;
 gap: 20px;
+width: 70%;
 margin-top: 20px;">
-<img src="
+<!-- <img src="
 ../flash-notes/assests/image3.png" width="300" width="300" height="auto">
 <img src="
-../flash-notes/assests/image4.png" width="300" height="auto">
+../flash-notes/assests/image4.png" width="300" height="auto"> -->
+
+![Desktop View](../flash-notes/assests/image3.png)
+![Desktop View](../flash-notes/assests/image4.png)
+
 </div>
 
 ## Table of Contents

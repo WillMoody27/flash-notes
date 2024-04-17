@@ -27,9 +27,9 @@ flex-wrap: wrap;
 gap: 20px;
 margin-top: 20px;">
 <img src="
-../flash-notes/src/assests/image.png" width="450" height="auto">
+../flash-notes/assests/image.png" width="450" height="auto">
 <img src="
-../flash-notes/src/assests/image2.png" width="450" height="auto">
+../flash-notes/assests/image2.png" width="450" height="auto">
 </div>
 
 <!-- Set smaller size image -->
@@ -42,9 +42,9 @@ flex-wrap: wrap;
 gap: 20px;
 margin-top: 20px;">
 <img src="
-../flash-notes/src/assests/image3.png" width="300" height="../flash-notes/src/assests/image4.png" width="300" height="auto">
+../flash-notes/assests/image3.png" width="300" height="../flash-notes/src/assests/image4.png" width="300" height="auto">
 <img src="
-../flash-notes/src/assests/image4.png" width="300" height="auto">
+../flash-notes/assests/image4.png" width="300" height="auto">
 </div>
 
 ## Table of Contents

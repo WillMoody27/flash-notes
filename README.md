@@ -21,15 +21,15 @@ Welcome to **Flash Notes**! This application is designed to assist students in o
 
 ## Desktop View
 
-![Desktop View1](../flash-notes/assests/image.png)
-![Desktop View2](../flash-notes/assests/image2.png)
+![Desktop View1](/flash-notes/assests/image.png)
+![Desktop View2](/flash-notes/assests/image2.png)
 
 <!-- Set smaller size image -->
 
 ## Mobile View Responsive
 
-![Desktop View3](../flash-notes/assests/image3.png)
-![Desktop View4](../flash-notes/assests/image4.png)
+![Desktop View3](/flash-notes/assests/image3.png)
+![Desktop View4](/flash-notes/assests/image4.png)
 
 ## Table of Contents
 

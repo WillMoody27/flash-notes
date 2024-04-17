@@ -8,7 +8,7 @@ import DarkModeToggle from "./DarkModeToggle";
 import DOMPurify from "dompurify"; // Import DOMPurify - to sanitize HTML content
 
 // Content Import From JS
-import { centerBtns, notes } from "../js/contentExports";
+import { centerBtns } from "../js/contentExports";
 
 const Main = () => {
   // Halting Problem and Rice's Theorem Types of Turing Machines, and TM components - different kinds, you know Universal Turing Machine. For CFG, you got derivations, and parse trees, with properties too... Oh, Regular Languages? Check the Regular Expressions; they fit in Finite Automata. DFA & NFA's in Automata Theory. Let’s not forget about Time and Space Complexity for Complexity Theory, P vs NP, NP-Completeness & Approximation Algorithms... Recursive and Recursively Enumerable Languages in Computability Theory. Reduction Techniques! Then there's the Intro part, don't overlook the Definition of Theory of Computation and its importance in Computer Science & Historical Background. Also, CFGs? Chomsky Hierarchy defines it!

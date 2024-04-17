@@ -9,11 +9,8 @@ const Button = ({ textInput, setPrompt, text, icon, handleSubmit }) => {
     <button
       className="btn"
       onClick={() => {
-        console.log(`${text} This Text: ${textInput}`);
-        // handleSubmit(`${textInput}`);
         setPrompt(prompt);
-        console.log("Prompt:", prompt);
-        // handleSubmit();
+        handleSubmit();
       }}
     >
       {text} {icon && <FontAwesomeIcon icon={icon} />}

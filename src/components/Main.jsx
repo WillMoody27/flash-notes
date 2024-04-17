@@ -83,6 +83,8 @@ const Main = () => {
         const sanitizedOutput = DOMPurify.sanitize(
           result.choices[0].message.content
         );
+        console.log(api);
+
         setOrganizedNotes(sanitizedOutput);
         console.log("Organized Notes:", sanitizedOutput);
       }

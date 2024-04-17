@@ -6,7 +6,7 @@ export const centerBtns = [
     text: "Organize",
   },
   {
-    text: "Translate (Spanish)",
+    text: "Translate (Klingon)",
   },
   {
     text: "Export PDF",

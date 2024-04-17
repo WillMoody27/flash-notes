@@ -1,16 +1,57 @@
-# Flash Notes (Class/Personal Project) [Beta Mode]
+# Flash Notes (Class/Personal Project)
 
-Welcome to **Flash Notes**! This application is designed to assist students in organizing their notes effectively with the help of GPT-3.5, a powerful language model. Flash Notes allows users to organize, translate, and summarize lecture notes with ease. The app is current under development and is in beta mode. Please feel free to test the application and provide feedback to help us improve the user experience.
+<!-- Add Website Tag -->
+<!-- Add border -->
+<div
+style="display: flex; justify-content: center; align-items: center;"
+>
+<img src="https://img.shields.io/badge/Application-Flash%20Notes-blue" alt="Website" style="margin-right: 10px;"
+/>
+<img src="https://img.shields.io/badge/Version-1.0.0-blue" alt="Version" style="margin-right: 10px;" />
+<img src="https://img.shields.io/badge/Status-Active-green" alt="Status" style="margin: 10px 0 10px 0;" />
+</div>
+
+Welcome to **Flash Notes**! This application is designed to assist students in organizing their notes effectively with the help of GPT-3.5, a powerful language model. Flash Notes allows users to organize, translate, and summarize lecture notes with ease. The application also features a dark mode for a comfortable reading experience and a user-friendly interface for seamless navigation.
+
+## Desktop View
+
+<div
+style="display: flex; justify-content: center; align-items: center; 
+flex-wrap: wrap;
+gap: 20px;
+margin-top: 20px;">
+<img src="
+../flash-notes/src/assests/image.png" width="450" height="auto">
+<img src="
+../flash-notes/src/assests/image2.png" width="450" height="auto">
+</div>
+
+<!-- Set smaller size image -->
+
+## Mobile View Responsive
+
+<div
+style="display: flex; justify-content: center; align-items: center; 
+flex-wrap: wrap;
+gap: 20px;
+margin-top: 20px;">
+<img src="
+../flash-notes/src/assests/image3.png" width="300" height="../flash-notes/src/assests/image4.png" width="300" height="auto">
+<img src="
+../flash-notes/src/assests/image4.png" width="300" height="auto">
+</div>
 
 ## Table of Contents
 
-- [Flash Notes (Class/Personal Project) \[Beta Mode\]](#flash-notes-classpersonal-project-beta-mode)
+- [Flash Notes (Class/Personal Project)](#flash-notes-classpersonal-project)
+  - [Desktop View](#desktop-view)
+  - [Mobile View Responsive](#mobile-view-responsive)
   - [Table of Contents](#table-of-contents)
   - [Features](#features)
   - [Installation](#installation)
+    - [**_API key is required to run the application. You can obtain the API key from OpenAI's website or RapidAPI and place within an `.env` file to protect your API key._**](#api-key-is-required-to-run-the-application-you-can-obtain-the-api-key-from-openais-website-or-rapidapi-and-place-within-an-env-file-to-protect-your-api-key)
   - [Usage](#usage)
   - [Contributing](#contributing)
-  - [License](#license)
 
 ## Features
 
@@ -45,6 +86,16 @@ Welcome to **Flash Notes**! This application is designed to assist students in o
    npm start
    ```
 
+   ### **_API key is required to run the application. You can obtain the API key from OpenAI's website or RapidAPI and place within an `.env` file to protect your API key._**
+
+   - The env variable is accessed within the main UI Component.
+
+   **_Example of `.env` file:_**
+
+   ```bash
+   REACT_APP_OPENAI_API_KEY=<your-api-key-here>
+   ```
+
 5. The application will be accessible at `http://localhost:3000`.
 
 ## Usage
@@ -68,11 +119,5 @@ Contributions are welcome! If you would like to contribute to this project, plea
 3. Commit your changes (`git commit -am 'Add new feature'`).
 4. Push to the branch (`git push origin feature/your-feature`).
 5. Create a new pull request.
-
-## License
-
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). You are free to use, modify, and distribute this software according to the terms of the license.
-
----
 
 Thank you for using Flash Notes! If you encounter any issues or have any feedback, feel free to reach out. Happy studying!

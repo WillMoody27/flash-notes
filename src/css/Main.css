@@ -5,14 +5,10 @@
   --max-w: 900px;
 
   /* Define color variables for dark and light modes */
-
   --light-background-color: #fff;
   --light-text-color: #000;
   --dark-background-color: #1a1a1a;
   --dark-text-color: #fff;
-}
-
-.main-section {
 }
 
 .main-section.lt-md {
@@ -97,6 +93,9 @@
   transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
     background 0.3s ease-in-out;
   color: inherit;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
 }
 
 .output-text-area {

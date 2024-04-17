@@ -21,43 +21,15 @@ Welcome to **Flash Notes**! This application is designed to assist students in o
 
 ## Desktop View
 
-<div
-style="display: flex; justify-content: center; align-items: center; 
-flex-wrap: wrap;
-gap: 20px;
-width: 70%;
-margin-top: 20px;">
-<!-- <img src="
-../flash-notes/assests/image.png" width="450" height="auto">
-<img src="
-../flash-notes/assests/image2.png" width="450" height="auto"> -->
-
-<!-- img -->
-
-![Desktop View](../flash-notes/assests/image.png)
-![Desktop View](../flash-notes/assests/image2.png)
-
-</div>
+![Desktop View1](../flash-notes/assests/image.png)
+![Desktop View2](../flash-notes/assests/image2.png)
 
 <!-- Set smaller size image -->
 
 ## Mobile View Responsive
 
-<div
-style="display: flex; justify-content: center; align-items: center; 
-flex-wrap: wrap;
-gap: 20px;
-width: 70%;
-margin-top: 20px;">
-<!-- <img src="
-../flash-notes/assests/image3.png" width="300" width="300" height="auto">
-<img src="
-../flash-notes/assests/image4.png" width="300" height="auto"> -->
-
-![Desktop View](../flash-notes/assests/image3.png)
-![Desktop View](../flash-notes/assests/image4.png)
-
-</div>
+![Desktop View3](../flash-notes/assests/image3.png)
+![Desktop View4](../flash-notes/assests/image4.png)
 
 ## Table of Contents
 

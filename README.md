@@ -9,8 +9,13 @@ style="display: flex; justify-content: center; align-items: center;"
 />
 <img src="https://img.shields.io/badge/Version-1.0.0-blue" alt="Version" style="margin-right: 10px;" />
 <img src="https://img.shields.io/badge/Status-Active-green" alt="Status" style="margin: 10px 0 10px 0;" />
-<img src="https://img.shields.io/badge/Website-William%20Moody-blue" alt="Website" style="margin: 10px 0 10px 10px;" />
+
 </div>
+<a
+style="margin: 10px 0 10px 10px; display: flex; justify-content: center;"
+href="https://williamhmoody.com/">
+<img src="https://img.shields.io/badge/Website-William%20Moody-blue" alt="Website"/>
+</a>
 
 Welcome to **Flash Notes**! This application is designed to assist students in organizing their notes effectively with the help of GPT-3.5, a powerful language model. Flash Notes allows users to organize, translate, and summarize lecture notes with ease. The application also features a dark mode for a comfortable reading experience and a user-friendly interface for seamless navigation.
 

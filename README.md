@@ -21,16 +21,8 @@ Welcome to **Flash Notes**! This application is designed to assist students in o
 
 ## Desktop View
 
-<div
-style="display: flex; justify-content: center; align-items: center; 
-flex-wrap: wrap;
-gap: 20px;
-margin-top: 20px;">
-<img src="
-assests/image.png" width="450" height="auto">
-<img src="
-assests/image2.png" width="450" height="auto">
-</div>
+![Desktop View1](/assests/image.png)
+![Desktop View2](/flash-notes/assests/image2.png)
 
 <!-- Set smaller size image -->
 

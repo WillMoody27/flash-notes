@@ -34,23 +34,6 @@ margin: auto;">
 
 </div>
 
-<!-- Set smaller size image -->
-
-## Mobile View Responsive
-
-<div
-style="display: flex; justify-content: center; align-items: center; 
-flex-wrap: wrap;
-gap: 20px;
-width: 40%;
-margin-top: 20px;
-margin: auto;">
-
-![Desktop View1](assests/image3.png)
-![Desktop View2](assests/image4.png)
-
-</div>
-
 ## Table of Contents
 
 - [Flash Notes (Class/Personal Project)](#flash-notes-classpersonal-project)

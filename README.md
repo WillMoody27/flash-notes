@@ -28,7 +28,6 @@ gap: 20px;
 margin-top: 20px;">
 <img src="
 ../flash-notes/assests/image.png" width="450" height="auto">
-../flash-notes/assests/image.png" width="450" height="auto">
 <img src="
 ../flash-notes/assests/image2.png" width="450" height="auto">
 </div>

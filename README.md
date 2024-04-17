@@ -21,15 +21,31 @@ Welcome to **Flash Notes**! This application is designed to assist students in o
 
 ## Desktop View
 
-![Desktop View1](/flash-notes/assests/image.png)
-![Desktop View2](/flash-notes/assests/image2.png)
+<div
+style="display: flex; justify-content: center; align-items: center; 
+flex-wrap: wrap;
+gap: 20px;
+margin-top: 20px;">
+<img src="
+assests/image.png" width="450" height="auto">
+<img src="
+assests/image2.png" width="450" height="auto">
+</div>
 
 <!-- Set smaller size image -->
 
 ## Mobile View Responsive
 
-![Desktop View3](/flash-notes/assests/image3.png)
-![Desktop View4](/flash-notes/assests/image4.png)
+<div
+style="display: flex; justify-content: center; align-items: center; 
+flex-wrap: wrap;
+gap: 20px;
+margin-top: 20px;">
+<img src="
+assests/image3.png" width="300" width="300" height="auto">
+<img src="
+assests/image4.png" width="300" height="auto">
+</div>
 
 ## Table of Contents
 

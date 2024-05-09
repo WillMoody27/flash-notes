@@ -174,3 +174,47 @@
   transition: all 0.3s ease;
   cursor: pointer;
 }
+
+/* Button Styles */
+.btn {
+  border: none;
+  background: none;
+  border: 1px solid #e2e2e2;
+  padding: 10px 20px;
+  margin-top: 1rem;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 1);
+  margin-left: 1rem;
+  cursor: pointer;
+  color: inherit;
+}
+
+.btn:hover {
+  background: #ffee00;
+  color: inherit;
+  transform: translateY(-8px);
+  box-shadow: 0 8px 0 rgb(162, 0, 255);
+}
+.export-btn:hover {
+  font-weight: 900;
+  transform: translateY(-10px);
+  box-shadow: 0 10px 0 rgb(171, 25, 255);
+}
+/* Export PDF BTN w/Custom Styling (From Figma) */
+.output .btn:nth-child(3) {
+  background: rgb(177, 82, 255);
+  margin-right: 100%;
+  font-weight: 900;
+  width: 180px;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .output .btn:nth-child(3) {
+    margin-right: auto;
+    padding: 10px 15px;
+    font-size: 0.8rem;
+  }
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import "../header/Header.css";
 
-const Header = () => {
+const Header = ({ setDocTitle }) => {
   return (
     <div className="heading--content">
       <input
@@ -9,6 +9,7 @@ const Header = () => {
         type="text"
         placeholder="Document Title"
         className="heading--main"
+        onChange={(e) => setDocTitle(e.target.value)}
       />
       <h1 className="logo--fn">
         Flash <span className="heading--main__bolt">⚡️</span> Notes

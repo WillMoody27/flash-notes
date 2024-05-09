@@ -6,23 +6,90 @@ import TextControls from "./text-controls/TextControls";
 import Header from "./header/Header";
 import DarkModeToggle from "./DarkModeToggle";
 import DOMPurify from "dompurify"; // Import DOMPurify - to sanitize HTML content
+// import { exportAsPDF } from "../export-content/text-export";
+import jsPDF from "jspdf";
 
 // Content Import From JS
 import { centerBtns } from "../js/contentExports";
 
 const Main = () => {
-  // Halting Problem and Rice's Theorem Types of Turing Machines, and TM components - different kinds, you know Universal Turing Machine. For CFG, you got derivations, and parse trees, with properties too... Oh, Regular Languages? Check the Regular Expressions; they fit in Finite Automata. DFA & NFA's in Automata Theory. Let’s not forget about Time and Space Complexity for Complexity Theory, P vs NP, NP-Completeness & Approximation Algorithms... Recursive and Recursively Enumerable Languages in Computability Theory. Reduction Techniques! Then there's the Intro part, don't overlook the Definition of Theory of Computation and its importance in Computer Science & Historical Background. Also, CFGs? Chomsky Hierarchy defines it!
-
   let api = process.env.REACT_APP_API_KEY;
-
   const [isEditing, setIsEditing] = useState(false);
   const [leftContentWrapper, setLeftContentWrapper] = useState(false);
   const [organizedNotes, setOrganizedNotes] = useState("");
   const [textInput, setTextInput] = useState("");
   const [prompt, setPrompt] = useState("");
+  const [docTitle, setDocTitle] = useState("Document Title");
 
   const handleLeftContentWrapperClick = () => {
     setLeftContentWrapper(!leftContentWrapper);
+  };
+
+  // Create a function to export the organizedNotes as a PDF
+
+  const exportAsPDF = () => {
+    const margin = {
+      top: 20,
+      bottom: 20,
+      left: 20,
+      right: 20,
+    };
+
+    const doc = new jsPDF({
+      orientation: "portrait",
+      unit: "mm",
+      format: "a4",
+      margins: margin,
+    });
+
+    const headerText = docTitle;
+    const textContent = organizedNotes;
+
+    doc.setFontSize(12);
+
+    // Add header
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(18);
+    doc.text(margin.left, margin.top + 16, headerText);
+
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(12);
+
+    // Calculate available height for content
+    const availableHeight =
+      doc.internal.pageSize.height - margin.top - margin.bottom;
+
+    // Split text into lines to fit within the available height
+    const lines = doc.splitTextToSize(
+      textContent,
+      doc.internal.pageSize.width - margin.left - margin.right
+    );
+
+    let y = margin.top + 30;
+
+    lines.forEach((line) => {
+      if (y + doc.getTextDimensions(line).h > availableHeight) {
+        doc.addPage();
+        y = margin.top;
+      }
+      doc.text(margin.left, y, line);
+      y += doc.getTextDimensions(line).h + 5;
+    });
+
+    // Footer
+    const totalPages = doc.internal.getNumberOfPages();
+    for (let i = 1; i <= totalPages; i++) {
+      doc.setPage(i);
+      doc.setFontSize(8);
+      doc.text(
+        doc.internal.pageSize.width - margin.right - 10,
+        doc.internal.pageSize.height - margin.bottom + 10,
+        `Page ${i} of ${totalPages}`
+      );
+    }
+
+    // Save the PDF
+    doc.save("Organized Notes.pdf");
   };
 
   const handleEditClick = () => {
@@ -106,7 +173,7 @@ const Main = () => {
           handleLeftContentWrapperClick={handleLeftContentWrapperClick}
         />
         <div className="right--content__wrapper">
-          <Header />
+          <Header setDocTitle={setDocTitle} />
           <div className="right--content__content">
             <div className="subheading--content">
               <h3 className="subheading">Your Notes</h3>
@@ -156,33 +223,18 @@ const Main = () => {
                   className="output-text-area"
                   value={organizedNotes}
                   onChange={(e) => handleAutoResize(e)}
-                  // value={`
-                  // **1. Introduction to Theory of Computation**
-
-                  // - Definition of Theory of Computation
-                  // - Importance in Computer Science
-                  // - Historical Background
-
-                  // **2. Turing Machines**
-
-                  // - Types of Turing Machines
-                  // - TM components
-                  // - Universal Turing Machine
-
-                  // **3. Context-Free Grammars**
-
-                  // - Derivations and parse trees
-                  // - Properties
-                  // - Chomsky Hierarchy
-
-                  // **4. Regular Languages**
-
-                  // - Regular Expressions
-                  // - Finite Automata
-                  // - DFA & NFA`}
                 ></textarea>
               </div>
-              <Button text={centerBtns[3].text} icon={centerBtns[3].icon} />
+              <button
+                className="btn export-btn"
+                text={"Export PDF"}
+                icon={centerBtns[3].icon}
+                onClick={() => {
+                  exportAsPDF();
+                }}
+              >
+                Export PDF
+              </button>
             </div>
           </div>
         </div>
